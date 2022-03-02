@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sherlock.apps.api", "sherlock.apps.api.csproj", "{B5191F9E-D896-4825-A2E7-04254B90606E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sherlock.apps.core", "..\sherlock.apps.core\sherlock.apps.core.csproj", "{16AC2A6E-323F-4F66-864A-B5C968C42174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sherlock.apps.repository", "..\sherlock.apps.repository\sherlock.apps.repository.csproj", "{74A0BE57-B606-4858-B3B7-D0E201A1101B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sherlock.apps.utility", "..\sherlock.apps.utility\sherlock.apps.utility.csproj", "{5E49D45A-30B6-40C4-A280-F3E1A97C73AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sherlock.apps.model", "..\sherlock.apps.model\sherlock.apps.model.csproj", "{9645226D-BA55-48D0-B2F7-2883EC40FAA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5191F9E-D896-4825-A2E7-04254B90606E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5191F9E-D896-4825-A2E7-04254B90606E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5191F9E-D896-4825-A2E7-04254B90606E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5191F9E-D896-4825-A2E7-04254B90606E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16AC2A6E-323F-4F66-864A-B5C968C42174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16AC2A6E-323F-4F66-864A-B5C968C42174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16AC2A6E-323F-4F66-864A-B5C968C42174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16AC2A6E-323F-4F66-864A-B5C968C42174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A0BE57-B606-4858-B3B7-D0E201A1101B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A0BE57-B606-4858-B3B7-D0E201A1101B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A0BE57-B606-4858-B3B7-D0E201A1101B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A0BE57-B606-4858-B3B7-D0E201A1101B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E49D45A-30B6-40C4-A280-F3E1A97C73AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E49D45A-30B6-40C4-A280-F3E1A97C73AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E49D45A-30B6-40C4-A280-F3E1A97C73AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E49D45A-30B6-40C4-A280-F3E1A97C73AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9645226D-BA55-48D0-B2F7-2883EC40FAA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9645226D-BA55-48D0-B2F7-2883EC40FAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9645226D-BA55-48D0-B2F7-2883EC40FAA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9645226D-BA55-48D0-B2F7-2883EC40FAA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
