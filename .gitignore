@@ -12,3 +12,6 @@
 
 /sherlock.apps.model/bin
 /sherlock.apps.model/obj
+
+/.vscode
+/sherlock.apps.api/.vs
