@@ -6,10 +6,18 @@ using Gremlin.Net.Driver;
 using Gremlin.Net.Driver.Exceptions;
 using Gremlin.Net.Structure.IO.GraphSON;
 using Newtonsoft.Json;
+using sherlock.apps.repository.contract;
 
 namespace sherlock.apps.repository.implementation;
-public class GremlinHelper
+public class GremlinHelper : IRepository
 {
+    public async Task<int> AddNode(object value)
+    {
+        var res = 0;
+        
+        return res;
+    }
+
     private readonly GremlinServer _gremlinServer;
     private readonly ConnectionPoolSettings _connectionPoolSettings;
     private readonly Action<ClientWebSocketOptions> _webSocketConfiguration;

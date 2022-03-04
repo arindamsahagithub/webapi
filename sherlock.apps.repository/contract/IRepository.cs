@@ -1,6 +1,6 @@
 namespace sherlock.apps.repository.contract;
 
-public interface GremlinHelper
+public interface IRepository
 {
     Task<int> AddNode(object value);
 }
