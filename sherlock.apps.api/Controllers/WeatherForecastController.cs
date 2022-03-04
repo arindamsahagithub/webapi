@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-
+using sherlock.apps.repository.contract;
+using sherlock.apps.repository.implementation;
+using sherlock.apps.model;
 namespace sherlock.apps.api.Controllers;
 
 [ApiController]
@@ -21,6 +23,8 @@ public class WeatherForecastController : ControllerBase
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
+        IRepository iRepository = new GremlinHelper("cosmosac.gremlin.cosmos.azure.com","4iXqkbNsqqJ71PmA6UoMYBRKJtOF26VffylttQ96baTRF5aXfSDmfuyfEiX4GnMcqWafEBMvJafe6Oe8z9h6uA==","sampledb","samplegraph");
+       
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
             Date = DateTime.Now.AddDays(index),

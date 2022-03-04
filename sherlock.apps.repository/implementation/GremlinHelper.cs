@@ -7,6 +7,7 @@ using Gremlin.Net.Driver.Exceptions;
 using Gremlin.Net.Structure.IO.GraphSON;
 using Newtonsoft.Json;
 using sherlock.apps.repository.contract;
+using System.Reflection;
 
 namespace sherlock.apps.repository.implementation;
 public class GremlinHelper : IRepository
@@ -14,7 +15,29 @@ public class GremlinHelper : IRepository
     public async Task<int> AddNode(object value)
     {
         var res = 0;
+        Type valueType = value.GetType();
+        IList<PropertyInfo> props = new List<PropertyInfo>(valueType.GetProperties());
+
+        var insertQuery = "g.addV('" + valueType.Name + "')";        
+        foreach(var prop in props)
+        {   
+            object propValue = prop.GetValue(value, null);
+            if(propValue!=null) 
+            {
+                insertQuery += ".property('" + prop.Name + "', '" + propValue +"')";
+            }            
+        }
+
+        if(insertQuery.Contains("property"))
+        {
+            insertQuery += ".property('pk', 'pk')";
+        }
         
+        using(var gremlinClient = await GetGremlinClient())
+        {
+            var resultSet = SubmitRequest(gremlinClient, insertQuery).Result;                    
+        }
+
         return res;
     }
 
@@ -91,9 +114,9 @@ public class GremlinHelper : IRepository
         return gremlinClient;
     }
 
-    private Task<ResultSet<dynamic>> SubmitRequest(GremlinClient gremlinClient, KeyValuePair<string, string> query)
+    private Task<ResultSet<dynamic>> SubmitRequest(GremlinClient gremlinClient, string query)
     {
-        return gremlinClient.SubmitAsync<dynamic>(query.Value);
+        return gremlinClient.SubmitAsync<dynamic>(query);
     }
 
     public async Task<string> GetValueAsString(IReadOnlyDictionary<string, object> dictionary, string key)

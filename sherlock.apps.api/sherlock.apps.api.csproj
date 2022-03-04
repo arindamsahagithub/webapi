@@ -10,4 +10,13 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>  
+    <Reference Include="repository">
+      <HintPath>..\sherlock.apps.repository\bin\Debug\net6.0\sherlock.apps.repository.dll</HintPath>
+    </Reference>
+    <Reference Include="model">      
+      <HintPath>..\sherlock.apps.model\bin\Debug\net6.0\sherlock.apps.model.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
