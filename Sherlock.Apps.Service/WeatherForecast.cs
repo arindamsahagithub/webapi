@@ -1,4 +1,4 @@
-namespace sherlock.apps.api;
+namespace Sherlock.Apps.Service;
 
 public class WeatherForecast
 {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Net.WebSockets;
 using System.Threading.Tasks;
@@ -6,11 +6,10 @@ using Gremlin.Net.Driver;
 using Gremlin.Net.Driver.Exceptions;
 using Gremlin.Net.Structure.IO.GraphSON;
 using Newtonsoft.Json;
-using sherlock.apps.repository.contract;
 using System.Reflection;
 
-namespace sherlock.apps.repository.implementation;
-public class GremlinHelper : IRepository
+namespace Sherlock.Apps.Utility.Helper;
+public class GremlinHelper
 {
     public async Task<int> AddNode(object value)
     {
