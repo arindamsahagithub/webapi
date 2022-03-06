@@ -4,12 +4,9 @@ namespace Sherlock.Apps.Repository.Implementation;
 
 public abstract class Repository<T> : IRepository<T>
 {
-    public GremlinHelper _gremlinHelper;
-    public Repository()
-    {
-        
-    }
-    public Repository(GremlinHelper gremlinHelper)
+    protected GremlinHelper _gremlinHelper;
+    
+    protected Repository(GremlinHelper gremlinHelper)
     {
         _gremlinHelper = gremlinHelper;
     }    

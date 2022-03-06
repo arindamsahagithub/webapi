@@ -5,5 +5,8 @@ namespace Sherlock.Apps.Repository.Implementation;
 
 public class PropertyRepository : Repository<Property>, IPropertyRepository
 {
-    
+    public PropertyRepository(GremlinHelper gremlinHelper): base(gremlinHelper)
+    {
+        
+    }
 }
