@@ -2,14 +2,18 @@ using Sherlock.Apps.Repository.Contract;
 using System.Reflection;
 namespace Sherlock.Apps.Repository.Implementation;
 
-public abstract class Repository : IRepository
+public abstract class Repository<T> : IRepository<T>
 {
-    private readonly GremlinHelper _gremlinHelper;
+    public GremlinHelper _gremlinHelper;
+    public Repository()
+    {
+        
+    }
     public Repository(GremlinHelper gremlinHelper)
     {
         _gremlinHelper = gremlinHelper;
-    }
-    public async Task<int> AddNode(object value)
+    }    
+    public async Task<int> AddNode(T value)
     {
         var res = 0;
         Type valueType = value.GetType();
