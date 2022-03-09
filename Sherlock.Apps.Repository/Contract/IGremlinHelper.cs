@@ -4,5 +4,6 @@ namespace Sherlock.Apps.Repository.Contract;
 
 public interface IGremlinHelper
 {
-    Task<ResultSet<dynamic>> SubmitRequest(string query);
+    Dictionary<string, string> GremlinQueries { get; }
+    Task<int> SubmitRequest();
 }

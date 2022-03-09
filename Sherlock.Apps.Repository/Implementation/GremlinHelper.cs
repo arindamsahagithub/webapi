@@ -11,9 +11,17 @@ using Sherlock.Apps.Repository.Contract;
 namespace Sherlock.Apps.Repository.Implementation;
 public class GremlinHelper : IGremlinHelper
 {
+    private readonly Dictionary<string, string> _gremlinQueries;
+    public Dictionary<string, string> GremlinQueries { 
+        get 
+        {
+            return _gremlinQueries;
+        } 
+    }
     private readonly GremlinServer _gremlinServer;
     private readonly ConnectionPoolSettings _connectionPoolSettings;
     private readonly Action<ClientWebSocketOptions> _webSocketConfiguration;
+
     public GremlinHelper(string host, string primaryKey, string dataBase, string container)
     {
         var containerLink =  "/dbs/" + dataBase + "/colls/" + container;
@@ -34,6 +42,8 @@ public class GremlinHelper : IGremlinHelper
                 {
                     options.KeepAliveInterval = TimeSpan.FromSeconds(10);
                 });
+        _gremlinQueries = new Dictionary<string, string>();
+        
     }
     private bool EnableSSL
     {
@@ -69,7 +79,7 @@ public class GremlinHelper : IGremlinHelper
             return port;
         }
     }
-    public async Task<ResultSet<dynamic>> SubmitRequest(string query)
+    public async Task<int> SubmitRequest()
     {
         using(var gremlinClient = new GremlinClient(
                 _gremlinServer, 
@@ -79,8 +89,13 @@ public class GremlinHelper : IGremlinHelper
                 _connectionPoolSettings, 
                 _webSocketConfiguration))
                 {
-                    return await gremlinClient.SubmitAsync<dynamic>(query);
+                    // return await gremlinClient.SubmitAsync<dynamic>(query);
+                    foreach (var query in _gremlinQueries)
+                    {
+                        await gremlinClient.SubmitAsync(query.Value);
+                    }
                 }
+        return 0;
         
     }
     

@@ -31,9 +31,9 @@ public abstract class Repository<T> : IRepository<T>
             insertQuery += ".property('pk', 'pk')";
         }
         
-        var rs = await _gremlinHelper.SubmitRequest(insertQuery);
+        var queryKey = "AddVertex " + valueType.ToString(); 
         
-        if(rs!=null) res=1;
+        _gremlinHelper.GremlinQueries.Add("",insertQuery);
 
         return res;
     }
