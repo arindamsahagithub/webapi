@@ -1,5 +1,4 @@
-namespace Sherlock.Apps.Model
-{
+namespace Sherlock.Apps.Model;
     public class Guest : Base
     {
         public string Name { get; set; }
@@ -7,4 +6,3 @@ namespace Sherlock.Apps.Model
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
     }
-}
