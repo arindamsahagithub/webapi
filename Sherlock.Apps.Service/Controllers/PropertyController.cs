@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-
+using Sherlock.Apps.Core.Contract;
 
 namespace Sherlock.Apps.Service.Controllers;
 
@@ -7,19 +7,21 @@ namespace Sherlock.Apps.Service.Controllers;
 [Route("[controller]")]
 public class PropertyController : ControllerBase
 {  
-    public PropertyController()
+    private readonly IPropertyCore _propertyCore;
+    public PropertyController(IPropertyCore propertyCore)
     {
+        _propertyCore = propertyCore;
     }
 
     [HttpGet(Name = "GetProperty")]
-    public IEnumerable<WeatherForecast> Get()
+    public IEnumerable<Property> Get()
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateTime.Now.AddDays(index),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+        
+    }
+
+    [HttpPost(Name = "PostProperty")]
+    public ActionResult Post(Property property)
+    {
+       _propertyCore.AddNode(property);
     }
 }
