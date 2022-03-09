@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Model">
+      <HintPath>..\Sherlock.Apps.Model\bin\Debug\net6.0\Sherlock.Apps.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Repository">
+      <HintPath>..\Sherlock.Apps.Repository\bin\Debug\net6.0\Sherlock.Apps.Repository.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

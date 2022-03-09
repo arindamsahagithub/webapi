@@ -1,6 +1,5 @@
 using Sherlock.Apps.Repository.Contract;
-using Sherlock.Apps.Repository.Model;
-
+using Sherlock.Apps.Model;
 namespace Sherlock.Apps.Repository.Implementation;
 
 public class PropertyRepository : Repository<Property>, IPropertyRepository

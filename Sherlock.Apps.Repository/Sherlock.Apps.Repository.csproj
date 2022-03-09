@@ -11,4 +11,10 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Model">
+      <HintPath>..\Sherlock.Apps.Model\bin\Debug\net6.0\Sherlock.Apps.Model.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

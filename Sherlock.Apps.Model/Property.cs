@@ -1,6 +1,4 @@
-
-
-namespace Sherlock.Apps.Repository.Model;
+namespace Sherlock.Apps.Model;
 
 public class Property
 {

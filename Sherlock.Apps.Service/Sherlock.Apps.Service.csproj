@@ -12,20 +12,13 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
-  <ItemGroup>  
-
+  <ItemGroup> 
     <Reference Include="Core">      
       <HintPath>..\Sherlock.Apps.Core\bin\Debug\net6.0\Sherlock.Apps.Core.dll</HintPath>
     </Reference>
-
-    <Reference Include="Utility">      
-      <HintPath>..\Sherlock.Apps.Utility\bin\Debug\net6.0\Sherlock.Apps.Utility.dll</HintPath>
+    <Reference Include="Model">
+      <HintPath>..\Sherlock.Apps.Model\bin\Debug\net6.0\Sherlock.Apps.Model.dll</HintPath>
     </Reference>
-
-    <Reference Include="Repository">      
-      <HintPath>..\Sherlock.Apps.Repository\bin\Debug\net6.0\Sherlock.Apps.Repository.dll</HintPath>
-    </Reference>
-
   </ItemGroup>
 
 </Project>

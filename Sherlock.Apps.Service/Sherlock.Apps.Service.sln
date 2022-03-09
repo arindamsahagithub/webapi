@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sherlock.Apps.Utility", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sherlock.Apps.Repository", "..\Sherlock.Apps.Repository\Sherlock.Apps.Repository.csproj", "{05D4E74E-0DB6-4749-9E2A-02A81766B3CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sherlock.Apps.Model", "..\Sherlock.Apps.Model\Sherlock.Apps.Model.csproj", "{05D4E74E-0DB6-4749-9E2A-02A81766B3CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
