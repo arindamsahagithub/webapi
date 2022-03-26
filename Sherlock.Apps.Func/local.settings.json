@@ -1,0 +1,11 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+        "PayoutEmailSubject": "A(.*) payout was sent",
+        "NewReservationSubject": "Reservation confirmed - (?<user>.+) arrives Feb 25",
+        "ReservationChangeSubject": "(?<userName>\\w+) wants to change their reservation",
+        "ListingURL": "https://www.airbnb.com/rooms/(?<listingId>\\d+)\\?.*"
+    }
+}

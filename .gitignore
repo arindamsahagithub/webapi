@@ -1,10 +1,13 @@
 /.vscode
 
-/Sherlock.Apps.Service/bin
-/Sherlock.Apps.Service/obj
+/Sherlock.Apps.Api/bin
+/Sherlock.Apps.Api/obj
 
-/Sherlock.Apps.Core/bin
-/Sherlock.Apps.Core/obj
+/Sherlock.Apps.Func/bin
+/Sherlock.Apps.Func/obj
+
+/Sherlock.Apps.Model/bin
+/Sherlock.Apps.Model/obj
 
 /Sherlock.Apps.Repository/bin
 /Sherlock.Apps.Repository/obj
@@ -12,5 +15,5 @@
 /Sherlock.Apps.Utility/bin
 /Sherlock.Apps.Utility/obj
 
-/Sherlock.Apps.Model/bin
-/Sherlock.Apps.Model/obj
+/Sherlock.Apps.Service/bin
+/Sherlock.Apps.Service/obj

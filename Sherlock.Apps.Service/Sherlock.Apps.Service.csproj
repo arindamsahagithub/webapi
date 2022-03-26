@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sherlock.Apps.Model\Sherlock.Apps.Model.csproj" />
+    <ProjectReference Include="..\Sherlock.Apps.Repository\Sherlock.Apps.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sherlock.Apps.Api", "Sherlock.Apps.Api\Sherlock.Apps.Api.csproj", "{62D8DAA9-945C-4E92-A17B-B7561EA559E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sherlock.Apps.Service", "Sherlock.Apps.Service\Sherlock.Apps.Service.csproj", "{EEB0B3C3-AF45-4299-811A-F33FF3D9E315}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sherlock.Apps.Model", "Sherlock.Apps.Model\Sherlock.Apps.Model.csproj", "{1A3D9414-AF71-4BAA-833F-E639B0C29908}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sherlock.Apps.Repository", "Sherlock.Apps.Repository\Sherlock.Apps.Repository.csproj", "{4ACCFC54-5653-461B-8085-B605662EF479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sherlock.Apps.Utility", "Sherlock.Apps.Utility\Sherlock.Apps.Utility.csproj", "{CF8FBD80-532B-453D-AACA-80E945526736}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62D8DAA9-945C-4E92-A17B-B7561EA559E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D8DAA9-945C-4E92-A17B-B7561EA559E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D8DAA9-945C-4E92-A17B-B7561EA559E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D8DAA9-945C-4E92-A17B-B7561EA559E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB0B3C3-AF45-4299-811A-F33FF3D9E315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB0B3C3-AF45-4299-811A-F33FF3D9E315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB0B3C3-AF45-4299-811A-F33FF3D9E315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB0B3C3-AF45-4299-811A-F33FF3D9E315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A3D9414-AF71-4BAA-833F-E639B0C29908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A3D9414-AF71-4BAA-833F-E639B0C29908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A3D9414-AF71-4BAA-833F-E639B0C29908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A3D9414-AF71-4BAA-833F-E639B0C29908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ACCFC54-5653-461B-8085-B605662EF479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ACCFC54-5653-461B-8085-B605662EF479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ACCFC54-5653-461B-8085-B605662EF479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ACCFC54-5653-461B-8085-B605662EF479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8FBD80-532B-453D-AACA-80E945526736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8FBD80-532B-453D-AACA-80E945526736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8FBD80-532B-453D-AACA-80E945526736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8FBD80-532B-453D-AACA-80E945526736}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40648DAF-C61F-4D63-9C8F-12F98A330F5A}
+	EndGlobalSection
+EndGlobal
