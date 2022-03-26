@@ -17,3 +17,5 @@
 
 /Sherlock.Apps.Service/bin
 /Sherlock.Apps.Service/obj
+
+/config.json
